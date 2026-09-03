@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Información legal · Mariela Vignola</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF6F0;--ivory-2:#F5F0E8;--lav-pale:#EDE6F7;--lav-soft:#DCCFF0;--lav:#B49AD8;--lav-ink:#8B6CB8;
+  --violet:#2E1B4C;--violet-2:#3B2560;--violet-deep:#1D1130;--ink:#2A2333;--ink-soft:#5B5266;
+  --line:rgba(46,27,76,.14);--pill:999px;--ease:cubic-bezier(.22,.7,.24,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Poppins,system-ui,sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--lav-ink);text-decoration:none}
+a:hover{color:var(--violet)}
+h1,h2{margin:0;font-family:Lora,Georgia,serif;font-weight:400}
+p{margin:0 0 14px;line-height:1.75;font-size:14px;color:var(--ink-soft)}
+.wrap{max-width:840px;margin:0 auto;padding:0 clamp(24px,8vw,80px)}
+
+header{position:sticky;top:0;z-index:60;height:86px;background:var(--ivory);border-bottom:1px solid var(--line)}
+header .wrap{max-width:1440px;height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;height:100%}
+.logo img{height:52px;width:auto;object-fit:contain}
+.logo-text{font-family:Lora,serif;font-size:15px;line-height:1.3;color:var(--violet);white-space:nowrap}
+.logo-text small{display:block;font-family:Poppins;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:400;color:var(--lav-ink)}
+.back{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);border-bottom:1px solid var(--lav)}
+
+main{padding:clamp(48px,8vh,88px) 0}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--lav-ink)}
+main h1{font-size:clamp(28px,3.4vw,40px);color:var(--violet);margin-top:12px}
+.legal-nav{display:flex;gap:18px;flex-wrap:wrap;margin:26px 0 50px;padding:14px 20px;background:var(--lav-pale);border-radius:12px;font-size:12.5px;letter-spacing:.04em}
+.legal-nav a{color:var(--violet)}
+.note{margin:0 0 46px;padding:16px 20px;background:var(--ivory-2);border-left:3px solid var(--lav);border-radius:0 10px 10px 0;font-size:12.5px;line-height:1.7;color:var(--ink-soft)}
+section{padding-top:50px;margin-top:-50px;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+section h2{font-size:22px;color:var(--violet);margin-bottom:16px}
+section + section{margin-top:46px}
+
+footer{background:var(--violet-deep);color:rgba(250,246,240,.62);padding:44px 0 30px;margin-top:80px}
+footer .wrap{max-width:1440px}
+footer .top{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+footer .logo img{height:58px;opacity:.92;filter:brightness(0) invert(1)}
+footer .logo-text{color:var(--ivory)}
+footer .logo-text small{color:rgba(250,246,240,.7)}
+footer nav{display:flex;gap:clamp(14px,2.2vw,40px)}
+footer nav a{font-size:12.5px;color:rgba(250,246,240,.66)}
+footer nav a:hover{color:var(--ivory)}
+footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,240,.1);
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11.5px;letter-spacing:.04em}
+footer .credit{margin-top:14px;text-align:center;font-size:10.5px;letter-spacing:.02em;color:rgba(250,246,240,.42)}
+footer .credit a{color:rgba(250,246,240,.55);border-bottom:1px solid rgba(250,246,240,.18)}
+footer .credit a:hover{color:var(--lav-soft)}
+@media(max-width:520px){footer .credit{font-size:9.5px;line-height:1.6;padding:0 8px}}
+
+@media(max-width:760px){
+  header .wrap{padding:0 20px}
+  .logo-text{display:none}
+  footer .top{flex-direction:column;align-items:flex-start;gap:22px}
+  .legal-nav{gap:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Mariela Vignola, abogada">
+      <img src="logo.webp" alt="Mariela Vignola · Abogada">
+      <span class="logo-text">Mariela Vignola<br><small>Abogada</small></span>
+    </a>
+    <a class="back" href="index.html">← Volver al inicio</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Información legal</p>
+    <h1>Aviso legal, privacidad y términos</h1>
+
+    <nav class="legal-nav">
+      <a href="#aviso">Aviso legal</a>
+      <a href="#privacidad">Política de privacidad</a>
+      <a href="#terminos">Términos de uso</a>
+    </nav>
+
+    <section id="aviso">
+      <h2>Aviso legal</h2>
+      <p>El presente sitio web tiene carácter informativo y tiene como finalidad dar a conocer los servicios de orientación y acompañamiento jurídico ofrecidos. El acceso y uso de este sitio no genera, por sí mismo, una relación profesional entre el usuario y la titular del sitio.</p>
+      <p>La información publicada no constituye asesoramiento legal individual. Para recibir orientación sobre una situación particular, es necesario iniciar una consulta directa a través de los canales de contacto indicados.</p>
+      <p>Se procurará que la información contenida en el sitio sea correcta y esté actualizada, sin perjuicio de lo cual no se garantiza la exactitud, integridad o vigencia permanente de sus contenidos.</p>
+    </section>
+
+    <section id="privacidad">
+      <h2>Política de privacidad</h2>
+      <p>Los datos personales que el usuario proporcione a través de los medios de contacto del sitio (WhatsApp, correo electrónico, formularios, redes sociales) serán utilizados exclusivamente para responder a la consulta realizada y gestionar la comunicación correspondiente.</p>
+      <p>No se comparten, venden ni ceden datos personales a terceros, salvo obligación legal. El usuario puede solicitar en cualquier momento la actualización, rectificación o eliminación de sus datos, escribiendo a través de los canales de contacto publicados en el sitio.</p>
+      <p>Este sitio puede utilizar cookies técnicas necesarias para su correcto funcionamiento. No se realiza seguimiento con fines publicitarios de terceros.</p>
+    </section>
+
+    <section id="terminos">
+      <h2>Términos de uso</h2>
+      <p>El uso de este sitio implica la aceptación de los presentes términos. Queda prohibida la reproducción total o parcial de sus contenidos (textos, imágenes, logo) sin autorización previa.</p>
+      <p>La titular del sitio no se responsabiliza por daños derivados del uso indebido de la información aquí publicada ni por la disponibilidad continua del sitio, pudiendo modificar, suspender o discontinuar su contenido sin previo aviso.</p>
+      <p>Para cualquier consulta vinculada a estos términos, contactar a través de los medios indicados en la sección de contacto del sitio.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a class="logo" href="index.html">
+        <img src="logo.webp" alt="Mariela Vignola · Abogada">
+        <span class="logo-text">Mariela Vignola<br><small>Abogada</small></span>
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#sobre">Sobre mí</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="bot">
+      <span>© <span id="year">2026</span> Mariela Vignola. Todos los derechos reservados.</span>
+      <span>Derecho claro. Acompañamiento real.</span>
+    </div>
+    <div class="credit">
+      <a href="legal.html">Aviso legal</a> · <a href="legal.html#privacidad">Privacidad</a> · <a href="legal.html#terminos">Términos</a> · Diseño &amp; creación web · <a href="https://www.instagram.com/switchgestion/" target="_blank" rel="noopener">@Switchgestion</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
