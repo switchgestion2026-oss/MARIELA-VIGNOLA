@@ -244,11 +244,11 @@ nav a:hover::after{right:0}
   background:repeating-linear-gradient(90deg,var(--lav) 0 4px,transparent 4px 10px);
   transform:scaleX(0);transform-origin:left;transition:transform 1.1s var(--ease) .15s}
 .steps.in .dash{transform:scaleX(1)}
-.steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative}
+.steps-row{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 28px;position:relative}
 .step{opacity:0;transform:translateY(16px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
 .steps.in .step{opacity:1;transform:none}
 .steps.in .step:nth-child(2){transition-delay:.22s}
-.steps.in .step:nth-child(3){transition-delay:.44s}
+.steps.in .step:nth-child(3){transition-delay:.44s} .steps.in .step:nth-child(4){transition-delay:.66s} @media(min-width:981px){.dash{display:none}}
 .step .n{width:38px;height:38px;border-radius:50%;background:var(--violet);color:var(--ivory);
   display:grid;place-items:center;font-family:'EB Garamond',serif;font-size:13px;letter-spacing:.04em}
 .step .si{width:54px;height:54px;border-radius:50%;background:var(--lav-pale);display:grid;place-items:center;margin:34px 0 20px}
@@ -329,7 +329,7 @@ nav a:hover::after{right:0}
 .vtag{position:absolute;right:18px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;
   font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:rgba(220,207,240,.5);z-index:2}
 
-/* ============ FOOTER ============ */
+/* ============ FORM ============ */ .cform{border:1px solid rgba(220,207,240,.28);border-radius:14px;padding:26px;background:rgba(255,255,255,.04);   backdrop-filter:blur(2px);display:grid;grid-template-columns:1fr 1fr;gap:14px} .cform .full{grid-column:1/-1} .cform label{display:grid;gap:6px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--lav-soft)} .cform input,.cform select,.cform textarea{width:100%;padding:12px 14px;border:1px solid rgba(220,207,240,.3);border-radius:10px;   background:rgba(255,255,255,.06);color:var(--ivory);font:300 14px Montserrat,sans-serif;letter-spacing:normal;text-transform:none;   transition:border-color .3s var(--ease),background .3s var(--ease)} .cform input:focus,.cform select:focus,.cform textarea:focus{outline:0;border-color:var(--lav);background:rgba(255,255,255,.1)} .cform ::placeholder{color:rgba(250,246,240,.4)} .cform select option{color:var(--ink)} .cform textarea{min-height:110px;resize:vertical} .cform .chk{display:flex;align-items:flex-start;gap:10px;font-size:12px;letter-spacing:normal;text-transform:none;font-weight:300;color:rgba(250,246,240,.72)} .cform .chk input{width:auto;margin-top:2px;accent-color:var(--lav)} .cform .chk a{color:var(--lav-soft);border-bottom:1px solid rgba(220,207,240,.35)} .cform .hp{position:absolute;left:-9999px} .cform .btn{justify-self:start} .cform .btn[disabled]{opacity:.6;pointer-events:none} .form-msg{grid-column:1/-1;font-size:13px;color:var(--lav-soft);min-height:1em} .cta-info{margin-top:30px;display:grid;gap:8px;font-size:13px;line-height:1.6;color:rgba(250,246,240,.72)} .cta-info strong{font-weight:500;color:var(--ivory)} .cta-info a{color:inherit;border-bottom:1px solid rgba(220,207,240,.35)} @media(max-width:560px){.cform{grid-template-columns:1fr;padding:20px}}  /* ============ FOOTER ============ */
 footer{background:var(--violet-deep);color:rgba(250,246,240,.62);padding:44px 0 30px;position:relative}
 footer .top{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
 footer .logo img{height:58px;opacity:.92;filter:brightness(0) invert(1)}
@@ -618,23 +618,29 @@ footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,2
     <div class="steps" id="steps">
       <div class="dash"></div>
       <div class="steps-row">
-        <div class="step">
+               <div class="step">
           <span class="n">01</span>
           <span class="si"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v10.5H12l-4.5 3.5v-3.5H4z"/><path d="M8.5 10.5h7"/></svg></span>
-          <h3>Contactás</h3>
-          <p>Contás brevemente tu situación por WhatsApp o email.</p>
+          <h3>Consulta</h3>
+          <p>Conocemos tu situación y escuchamos qué necesitás.</p>
         </div>
         <div class="step">
           <span class="n">02</span>
-          <span class="si"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15 15l4.5 4.5"/></svg></span>
-          <h3>Analizamos</h3>
-          <p>Evaluamos el caso y las alternativas disponibles.</p>
+          <span class="si"><svg viewBox="0 0 24 24"><path d="M6 3.5h8l4 4v13H6z"/><path d="M14 3.5v4h4M9 12h6M9 15.5h6"/></svg></span>
+          <h3>Análisis</h3>
+          <p>Analizamos tu caso y la documentación disponible.</p>
         </div>
         <div class="step">
           <span class="n">03</span>
+          <span class="si"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 18h8M6 16v-5a3 3 0 0 1 3-3h7"/></svg></span>
+          <h3>Estrategia</h3>
+          <p>Evaluamos las alternativas jurídicas posibles.</p>
+        </div>
+        <div class="step">
+          <span class="n">04</span>
           <span class="si"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M8.2 12.2 11 15l5-6" stroke-linejoin="round"/></svg></span>
-          <h3>Avanzamos</h3>
-          <p>Definimos el próximo paso y te acompaño en el proceso.</p>
+          <h3>Acompañamiento</h3>
+          <p>Te acompañamos durante todo el proceso.</p>
         </div>
       </div>
     </div>
@@ -669,7 +675,11 @@ footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,2
       </div>
       <div class="acc-item">
         <button class="acc-q" aria-expanded="false">¿Cuánto cuesta contratar un abogado y cómo es el proceso para empezar?<span class="plus"></span></button>
-        <div class="acc-a"><p>La consulta profesional es arancelada: en ella analizamos tu caso, te oriento sobre tus opciones y definimos los próximos pasos. Para empezar, escribime por WhatsApp y coordinamos día y horario.</p></div>
+        <div class="acc-a"><p>La consulta profesional es arancelada: en ella analizamos tu caso, te oriento sobre tus opciones y definimos los próximos pasos. Para empezar, escribime por WhatsApp o completá el formulario y coordinamos día y horario.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">¿Cómo puedo solicitar una consulta?<span class="plus"></span></button>
+        <div class="acc-a"><p>Podés escribirme por WhatsApp o completar el <a href="#contacto">formulario de contacto</a> contándome brevemente tu situación. Te respondo a la brevedad para coordinar día y horario de la consulta virtual.</p></div>
       </div>
     </div>
   </div>
@@ -744,7 +754,7 @@ footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,2
     <div>
       <p class="eyebrow rv">Hablemos de tu situación</p>
       <h2 class="rv d1">¿Necesitás<br><em>orientación?</em></h2>
-      <p class="lead rv d2">Escribime y coordinamos una consulta.</p>
+      <p class="lead rv d2">Completá el formulario o escribime por WhatsApp y coordinamos una consulta.</p>
       <div class="cta-row rv d3">
         <a class="btn btn--light" href="https://wa.me/5491160318693?text=Hola%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener" onclick="gtag('event','click_whatsapp',{area:'general'})">
           Hacer una consulta
@@ -755,29 +765,45 @@ footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,2
           <span class="hand">Respondemos a la brevedad</span>
         </span>
       </div>
+      <div class="cta-info rv d4">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491160318693" target="_blank" rel="noopener">+54 9 11 6031-8693</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/mavignola_abogada" target="_blank" rel="noopener">@mavignola_abogada</a></p>
+        <p><strong>Ubicación:</strong> Pasteur 69, Avellaneda</p>
+        <p>Atención 100% virtual, con cita previa. No concurrir sin coordinar antes.</p>
+      </div>
     </div>
 
-    <div class="panel rv d2">
-      <div class="row">
-        <i><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Z"/></svg></i>
-        <div><p class="k">WhatsApp</p><p class="v">+54 9 11 6031-8693</p></div>
-      </div>
-      <div class="row">
-        <i><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 6.4 8.4 6.4 8.4-6.4"/></svg></i>
-        <div><p class="k">Email</p><p class="v">dra.vignolauba@gmail.com</p></div>
-      </div>
-      <div class="row">
-        <i><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.4" r=".9" fill="currentColor" stroke="none"/></svg></i>
-        <div><p class="k">Instagram</p><p class="v"><a href="https://instagram.com/mavignola_abogada" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid rgba(220,207,240,.35)">@mavignola_abogada</a></p></div>
-      </div>
-      <div class="row">
-        <i><svg viewBox="0 0 24 24"><path d="M12 21s6.5-6.1 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 14.9 12 21 12 21Z"/><circle cx="12" cy="10.3" r="2.4"/></svg></i>
-        <div><p class="k">Ubicación</p><p class="v">Pasteur 69, Avellaneda</p></div>
-      </div>
-      <div class="row">
-        <i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.5v5l3.2 2" stroke-linecap="round"/></svg></i>
-        <div><p class="k">Modalidad</p><p class="v">Atención 100% virtual, con cita previa. No concurrir sin coordinar antes por WhatsApp.</p></div>
-      </div>
+    <form class="cform rv d2" id="cform">
+      <label>Nombre y apellido<input name="nombre" required autocomplete="name"></label>
+      <label>Teléfono / WhatsApp<input name="telefono" type="tel" required autocomplete="tel"></label>
+      <label>Email<input name="email" type="email" autocomplete="email"></label>
+      <label>Localidad<input name="localidad" autocomplete="address-level2"></label>
+      <label>Área de consulta
+        <select name="area" required>
+          <option value="" disabled selected>Elegí una opción</option>
+          <option>Familia</option>
+          <option>Riesgos del trabajo / ART</option>
+          <option>Laboral</option>
+          <option>Civil y Sucesiones</option>
+          <option>Otra</option>
+        </select>
+      </label>
+      <label>Modalidad
+        <select name="modalidad" required>
+          <option value="" disabled selected>Elegí una opción</option>
+          <option>Videollamada</option>
+          <option>Llamada telefónica</option>
+        </select>
+      </label>
+      <label class="full">Disponibilidad horaria<input name="disponibilidad" placeholder="Ej: lunes a viernes por la tarde"></label>
+      <label class="full">Contame brevemente tu situación<textarea name="mensaje" required maxlength="1500"></textarea></label>
+      <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="chk full"><input type="checkbox" required>Acepto la <a href="legal.html#privacidad" target="_blank">política de privacidad</a>.</label>
+      <button class="btn btn--light full" type="submit">Enviar consulta
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 11h11.2l-4.6-4.6L13 5l7 7-7 7-1.4-1.4 4.6-4.6H5z"/></svg></span>
+      </button>
+      <p class="form-msg" id="form-msg" role="status"></p>
+    </form>
     </div>
   </div>
 </section>
@@ -866,7 +892,7 @@ document.querySelectorAll('.acc-item').forEach(item => {
   });
 });
 
-/* fallback: nada queda invisible si IO no dispara */
+/* formulario → Google Sheets */ const cform = document.getElementById('cform'), fmsg = document.getElementById('form-msg'); cform.addEventListener('submit', async e => {   e.preventDefault();   if (cform.elements.web.value) return;   const btn = cform.querySelector('button');   btn.disabled = true; fmsg.textContent = 'Enviando…';   try {     await fetch('https://script.google.com/macros/s/AKfycbxKq2cOtQCAc_qs4nv3Odpz4ogrLcn7GYqD1FNc8uS3gC1LIBZEn73HYtWysuXPHf_v/exec', {       method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(cform))     });     cform.reset();     fmsg.textContent = '¡Gracias! Recibí tu consulta y te respondo a la brevedad.';     if (window.gtag) gtag('event', 'form_submit', {area: 'contacto'});   } catch {     fmsg.textContent = 'No se pudo enviar. Probá de nuevo o escribime por WhatsApp.';   }   btn.disabled = false; });  /* fallback: nada queda invisible si IO no dispara */
 setTimeout(() => document.querySelectorAll('.rv,.rv-x').forEach(el => el.classList.add('in')), 1400);
 
 /* óvalo hero: desplazamiento mínimo con el scroll */
