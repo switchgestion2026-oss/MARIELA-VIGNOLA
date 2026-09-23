@@ -802,7 +802,7 @@ footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,2
       <label>Teléfono / WhatsApp<input name="telefono" type="tel" required autocomplete="tel"></label>
       <label>Email<input name="email" type="email" autocomplete="email"></label>
       <label>Localidad<input name="localidad" autocomplete="address-level2"></label>
-      <label>Área de consulta
+      <label class="full">Área de consulta
         <select name="area" required>
           <option value="" disabled selected>Elegí una opción</option>
           <option>Familia</option>
@@ -812,13 +812,7 @@ footer .bot{margin-top:34px;padding-top:20px;border-top:1px solid rgba(250,246,2
           <option>Otra</option>
         </select>
       </label>
-      <label>Modalidad
-        <select name="modalidad" required>
-          <option value="" disabled selected>Elegí una opción</option>
-          <option>Videollamada</option>
-          <option>Llamada telefónica</option>
-        </select>
-      </label>
+
       <label class="full">Disponibilidad horaria<input name="disponibilidad" placeholder="Ej: lunes a viernes por la tarde"></label>
       <label class="full">Contame brevemente tu situación<textarea name="mensaje" required maxlength="1500"></textarea></label>
       <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
